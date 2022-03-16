@@ -154,3 +154,6 @@
       }
 
     //   3.Remova a `section` criado no passo 5 (aquele que possui a classe `left-content`). Utilize a função `.removeChild()`;
+
+    const sectionLeftContent = document.getElementsByClassName('left-content')[0];
+    elementMain.removeChild(sectionLeftContent);
