@@ -16,8 +16,10 @@
     <main>
         <form action="" method="get" class="speaker-form">
             <div class="form-row">
-                <label for="full-name">Nome completo:</label>
-                <input required type="text" id="full-name" name="full-name">
+                <div class="line-content">
+                    <label for="full-name">Nome completo:</label>
+                    <input required type="text" id="full-name" name="full-name">
+                </div>
             </div>
             <div class="line-content">
                 <fieldset class="legacy-form-row">
@@ -43,10 +45,11 @@
                     placeholder="Fale um pouco sobre você."></textarea>
             </div>
             <div class="resume">
-                <legend>Envie seu Currículo:</legend>
-                <br>
-                <input type="file" name="envie" value="enviar">
-
+                <div class="line-content">
+                    <legend>Envie seu Currículo:</legend>
+                    <br>
+                    <input type="file" name="envie" value="enviar">
+                </div>
             </div>
             <div class="line-content">
                 <input type="checkbox" id="avaliable" name="avaliable">
