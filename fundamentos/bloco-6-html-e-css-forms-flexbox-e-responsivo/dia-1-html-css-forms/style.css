@@ -5,25 +5,11 @@
   }
   
 
-.imagem {
-    display: flex;
-}
-
-  #box1{
-
-    background-color:green;
-    
-    padding: 20px;
-    text-align:center;
-   
-    
-    }
-
-  body {
+body {
       background-color: grey;
   }
   
-  .speaker-form-header {
+.speaker-form-header {
     text-align: center;
     background-color: rgb(246, 247, 248);
     border: 1px solid rgb(214, 217, 220);
@@ -33,12 +19,12 @@
     padding: 50px;
   }
   
-  .speaker-form-header h1 {
+.speaker-form-header h1 {
     font-size: 30px;
     margin-bottom: 20px;
   }
   
-  .speaker-form {
+.speaker-form {
     background-color: rgb(246, 247, 248);
     border: 1px solid rgb(214, 217, 220);
     border-radius: 3px;
@@ -47,7 +33,7 @@
     margin: 0 auto 40px auto;
   }
   
-  .form-row input[type="text"] {
+.form-row input[type="text"] {
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(214, 217, 220);
     border-radius: 3px;
@@ -57,12 +43,12 @@
     
   }
   
-  .line-content {
+.line-content {
     margin: 20px;
   } 
   
   
-  textarea {
+textarea {
     width: 100%;
     margin-top: 15px;
     resize: none;
@@ -70,6 +56,6 @@
   
   
   
-  button {
+button {
     padding: 5px;
   }
