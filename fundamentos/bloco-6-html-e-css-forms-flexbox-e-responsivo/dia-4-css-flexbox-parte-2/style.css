@@ -1,13 +1,11 @@
 /* Sobre a propriedade box-sizing: https://www.w3schools.com/css/css3_box-sizing.asp */
 
+/* Sobre a propriedade box-sizing: https://www.w3schools.com/css/css3_box-sizing.asp */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-
-  body {
-      background-color:grey;
   }
   
   /* Estilizando o menu principal */
@@ -61,10 +59,10 @@
     justify-content: space-around;
   }
   
+ 
   
   
-  
-  /* Estilizando a grade de imagens */
+ 
   
   .photo-grid-container {
     /* border: solid 2px blue; */
