@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Formulário de Entrevista</title>
+    <title>Submeter Palestra</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
     <header class="speaker-form-header">
-        <h1>Formulário de Entrevista</h1>
-        <p><em>Quer fazer parte do nosso time? Preencha o formulário!</em></p>
+        <h1>Submeter Palestra</h1>
+        <p><em>Quer participar na nossa conferência? Preencha o formulário!</em></p>
     </header>
     <main>
         <form action="" method="get" class="speaker-form">
             <div class="form-row">
-                <div class="line-content">
-                    <label for="full-name">Nome completo:</label>
-                    <input required type="text" id="full-name" name="full-name">
-                </div>
+                <label for="full-name">Nome completo:</label>
+                <input required type="text" id="full-name" name="full-name">
             </div>
             <div class="line-content">
                 <fieldset class="legacy-form-row">
-                    <legend>Local de Trabalho</legend>
-                    <input type="radio" name="local de Trabalho" value="Campus" id="local de trabalho1">
-                    <label for="local de trabalho1">campus</label>
+                    <legend>Tipo de palestra</legend>
+                    <input type="radio" name="talk-type" value="main-stage" id="talk-type-1">
+                    <label for="talk-type-1">Palco Principal</label>
 
-                    <input type="radio" name="local de Trabalho" value="home-ofice" id="local de trabalho2">
-                    <label for="local de trabalho2">home-ofice</label>
+                    <input type="radio" name="talk-type" value="workshop" id="talk-type-2">
+                    <label for="talk-type-2">Workshop</label>
                 </fieldset>
             </div>
             <div class="line-content">
@@ -40,20 +35,12 @@
                 </select>
             </div>
             <div class="line-content">
-                <label for="abstract">Fale mais sobre você:</label>
-                <textarea name="abstract" id="abstract" cols="50" rows="10"
-                    placeholder="Fale um pouco sobre você."></textarea>
-            </div>
-            <div class="resume">
-                <div class="line-content">
-                    <legend>Envie seu Currículo:</legend>
-                    <br>
-                    <input type="file" name="envie" value="enviar">
-                </div>
+                <label for="abstract">Resumo da palestra:</label>
+                <textarea name="abstract" id="abstract" cols="50" rows="10" placeholder="Explique o tema da palestra."></textarea>
             </div>
             <div class="line-content">
                 <input type="checkbox" id="avaliable" name="avaliable">
-                <label for="avaliable">Confirmo todos os dados acima</label>
+                <label for="avaliable">Confirmo que estou disponível na data do evento</label>
             </div>
             <div class="line-content">
                 <button type="submit">Enviar</button>
@@ -61,5 +48,4 @@
         </form>
     </main>
 </body>
-
 </html>
