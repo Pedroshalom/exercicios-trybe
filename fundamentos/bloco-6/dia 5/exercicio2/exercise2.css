@@ -14,7 +14,7 @@ html {
     padding: 20px;
   }
   
-  /* TODO */
+  
   
   /* Aqui está o primeiro breakpoint e os estilos definidos para ele */
   
@@ -34,6 +34,8 @@ html {
   
 }
 
+ /* Aqui está o segundo breakpoint e os estilos definidos para ele */
+
 @media screen and (min-width: 600px) {
     body {
       background-color: lightblue;
@@ -41,5 +43,17 @@ html {
   
     .container {
       flex-wrap: wrap;
+    }
+}
+
+ /* Aqui está o terceiro breakpoint e os estilos definidos para ele */
+
+ @media screen and (min-width: 1000px) {
+    body {
+      background-color: lightgreen;
+    }
+  
+    .container {
+      flex-wrap: nowrap;
     }
 }
