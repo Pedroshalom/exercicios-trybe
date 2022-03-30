@@ -1,0 +1,35 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  p {
+    padding: 20px;
+  }
+  
+  /* TODO */
+  
+  /* Aqui está o primeiro breakpoint e os estilos definidos para ele */
+  
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: lightcoral;
+      font-family: sans-serif;
+    }
+    .container {
+      flex-direction: column;
+    }
+  
+    p {
+      padding: 0 5px;
+      line-height: 1.5em;
+    }
+  
+}
