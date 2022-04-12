@@ -63,35 +63,25 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
-  //1 - Crie um array com strings no formato 
-  //NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA 
-  const expectedResult = [
-    'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-    'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-    'Fundação - Ficção Científica - Isaac Asimov',
-    'Duna - Ficção Científica - Frank Herbert',
-    'A Coisa - Terror - Stephen King',
-    'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
-  ];
-  
-  const nomeGeneroAutor = (books) => {
-      const name = books.map((book) => {
-          return `${book.name} - ${book.genre} - ${book.author.name}`
-      })
-      return name
-  }
-  console.log(nomeGeneroAutor(books));
 
-  //1 - Dada uma matriz, transforme em um array.
-
-  const arrays = [
-    ['1', '2', '3'],
-    [true],
-    [4, 5, 6],
-  ];
+const expectedResult = {
+    id: 1,
+    name: 'As Crônicas de Gelo e Fogo',
+    genre: 'Fantasia',
+    author: {
+      name: 'George R. R. Martin',
+      birthYear: 1948,
+    },
+    releaseYear: 1991,
+  };
   
-  function flatten() {
-    return arrays.reduce((acumulador, valor) => (acumulador + valor), []);
+  function livroComMaiorNome() {
+    // escreva seu código aqui
+    return books.reduce((maiorLivro, livroAtual) => {
+        if (livroAtual.name.length > maiorLivro.name.length) {
+          return livroAtual;
+        }
+        return maiorLivro;
+      });
   }
-  console.log(flatten())
- 
+  console.log(livroComMaiorNome());

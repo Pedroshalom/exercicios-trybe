@@ -123,19 +123,7 @@ function reduceNames() {
   }, '');
   return names.trim();
 }
-console.log(expectedResult1)
-
-//3 - Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
-const expectedResult2 = 43;
-
-function averageAge() {
-  const numberOfBooks = books.length;
-  const sumOfAges = books.reduce((sum, book) => (
-    sum + (book.releaseYear - book.author.birthYear)
-  ), 0);
-  return sumOfAges / numberOfBooks;
-}
-console.log(expectedResult2);
+console.log(reduceNames());
 
 //4 - Encontre o livro com o maior nome.
 const expectedResult3 = {
@@ -176,7 +164,7 @@ function containsA() {
         return acumulator;
      }, 0), 0);
 }
-console.log();
+console.log(containsA());
 
 const palavras = ['o', 'rato', 'roeu', 'a', 'roupa', 'do', 'rei', 'de', 'roma'];
 
@@ -187,3 +175,5 @@ const travaLingua = palavras.reduce((acumulator, valorAtual) => {
 })
 console.log(travaLingua);
 //retorna o rato roeu a roupa do rei de roma
+
+
