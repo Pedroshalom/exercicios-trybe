@@ -1,0 +1,24 @@
+body {
+    background-color:bisque;
+    color: black;
+    font: normal 18pt arial;
+}
+
+#area {
+    font: normal 20pt Arial ;
+    background: rgb(99, 162, 5);
+    color: white;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+input {
+    font: normal 18 pt Arial;
+    width: 100px;
+}
+
+#res {
+    margin-top: 20px;
+}
