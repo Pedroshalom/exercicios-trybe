@@ -46,5 +46,4 @@ console.log(indexOfPortfolio);
 
 let menu2 = ['Home', 'Serviços', 'Portfólio', 'Links'];
 menu2.push('Contato');
-
 console.log(menu2);
