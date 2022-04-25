@@ -1,56 +1,88 @@
-function changeText() {
-    let paragraph = document.getElementsByTagName('p')[1];
-    paragraph.innerHTML = "Proporcionar para mim mesmo e para minha família sempre o melhor"
-  }
-  changeText();
+// const paragraph = document.getElementById("paragraph");
+//       paragraph.style.color = "red";
 
-  
-        /*
-        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
-        - document.getElementById()
-        - document.getElementsByClassName()
-        - document.getElementsByTagName()
- Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
- Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
- Crie uma função que mude a cor do quadrado vermelho para branco.
- Crie uma função que corrija o texto da tag <h1>.
- Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
- Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-        */
-        function changeText() {
-    let paragraph = document.getElementsByTagName('p')[1];
-    paragraph.innerHTML = "Proporcionar para mim mesmo e para minha família sempre o melhor"
-  }
-  changeText();
-  function changeColorgreen() {
-  let quadradoAmarelo = document.getElementsByClassName('main-content')[0];
-  quadradoAmarelo.style.background = "rgb(76,164,109)"
-  }
-  changeColorgreen();
+//       document.getElementById('page-title').innerText = 'O Auto da Compadecida';
 
-  function changeColorWhite() {
-    let quadradoVermelho = document.getElementsByClassName('center-content') [0];
-    quadradoVermelho.style.background = "white"
-  }
-  changeColorWhite();
+//       document.getElementById('second-paragraph').innerText = 'O melhor filme nacional!!'
 
-  function corrigindoTitulo() {
-      let novoTitulo = document.getElementsByTagName('h1')[0];
-      novoTitulo.innerHTML = "Exercício 5.1 - Javascript";
+//       document.getElementById('subtitle').innerText = 'E se não for eu cegue!'
+
+//     //Este são exemplos de como recuperar elementos pelo getelElementeById e com o innerText alterar o seu valor!!
+
+//     document.getElementsByClassName('lista');
+
+function alteraCor(elementos, cor) { 
+  document.querySelector(elementos).style.backgroundColor = cor; 
+
+}
+
+// alteraCor('.month-container', 'blue')
+
+const btnHoliday = document.getElementById('btn-holiday');
+btnHoliday.addEventListener('click', function() {
+  const holidays = document.querySelectorAll('.holiday');
+  for (let index = 0; index < holidays.length; index += 1) {
+    if (holidays[index].style.backgroundColor === 'white') {
+      holidays[index].style.backgroundColor = 'rgb(238,238,238)';
+    } else {
+      holidays[index].style.backgroundColor = 'black';
     }
-    corrigindoTitulo();
+  }
+});
 
-    function paragrafoMaiusculo() {
-      let paragrafo = document.getElementsByTagName('p')[0];
-      paragrafo.innerHTML = paragrafo.innerHTML.toUpperCase();
+const fridayDays = [6, 13, 20, 27];
+const btnFriday = document.getElementById('btn-friday');
+btnFriday.addEventListener('click', function() {
+  const fridays = document.getElementsByClassName('friday-day');
+  for (let index = 0; index < fridays.length; index += 1) {
+    if (fridays[index].innerHTML !== "SEXTOU!") {
+      fridays[index].innerHTML = "SEXTOU!";
+    } else {
+      fridays[index].innerHTML = fridayDays[index];
     }
-    paragrafoMaiusculo();
+  }
+});
 
-    function mostrarPragrafo() {
-      let paragrafo = document.getElementsByTagName('p');
-      for (let index = 0; index < paragrafo.length; index += 1) {
-        console.log(paragrafo[index].innerHTML);
-      }
-    }
-    mostrarPragrafo();
-    
+const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
+const weekDaysList = document.querySelector('.week-days');
+
+for (let index = 0; index < weekDays.length; index += 1) {
+  let days = weekDays[index];
+
+  let dayListItem = document.createElement('li');
+  dayListItem.innerHTML = days;
+
+  weekDaysList.appendChild(dayListItem);
+};
+
+const daysList = [];
+for (index = 1; index < 31; index += 1) {
+  daysList.push(index);
+};
+
+const getDaysList = document.querySelector('#days');
+
+for (let index = 0; index < daysList.length; index += 1) {
+  const day = daysList[index];
+  const dayItem = document.createElement('li');
+  if (day === 2 | day === 15) {
+    dayItem.className = 'holiday';
+    dayItem.innerHTML = day;
+    getDaysList.appendChild(dayItem);
+  } else if (day === 6 | day === 13 | day === 27) {
+    dayItem.className = 'friday-day';
+    dayItem.innerHTML = day;
+    getDaysList.appendChild(dayItem);
+  } else if (day === 20) {
+    dayItem.className = 'holiday friday-day';
+    dayItem.innerHTML = day;
+    getDaysList.appendChild(dayItem);
+  } else {
+    dayItem.innerHTML = day;
+    getDaysList.appendChild(dayItem);
+  }
+};
+
+function alteraCor(elementos, cor){
+  document.querySelector(elementos).style.backgroundColor = cor;
+};

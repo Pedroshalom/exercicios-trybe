@@ -1,83 +1,39 @@
- <!-- exeplo de exercício -->
-
-<!-- <!DOCTYPE html>
-<html>
-  <body>
-    <header>
-      <h2 id="page-title">Título</h2>
-      <p class="palavra" id="paragraph">Dê uma cor para este parágrafo!</p>
-      <h4 id="subtitle">Subtítulo</h4>
-      <p class="palavra" id="second-paragraph">Segundo parágrafo!</p>
-    </header>
-    <script>
-      const paragraph = document.getElementById("paragraph");
-      paragraph.style.color = "red";
-    
-      const title = document.getElementById('page-title');
-      title.innerText = 'O resgate do soldado Ryan';
-      
-      const secondParagraph = document.getElementById('second-paragraph');
-      secondParagraph.innerText = 'Um filme com muita emoção'
-      
-      const subtitle = document.getElementById('subtitle');
-      subtitle.innerText = 'Combate ao extremo'
-      
-      const paragraphs = document.getElementsByClassName("palavra"); 
-      paragraphs[0].style.fontSize = '1.5rem';
-      paragraphs[0].style.color = 'green';
-
-      
-    </script>
-    <script src="script.js" ></script>
-  </body>
-</html> -->
-
-<!-- Exercícios Funções de manipulação do DOM-->
-
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Exercício 5.1</title>
-    
-    <style>
-      main, section {
-        border-color: black;
-        border-style: solid;
-      }
-
-      .title {
-        text-align: center;
-      }
-
-      .main-content {
-        background-color: yellow;
-      }
-
-      .main-content .center-content {
-        background-color: red;
-        width: 50%;
-        margin: 0 auto;
-      }
-
-      .main-content .center-content p {
-        font-style: italic;
-      }
-    </style>
+    <title>Calendário</title>
   </head>
   <body>
-    <header> 
-      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
-    </header>    
-    <main class="main-content">
-      <section class="center-content">
-        <p>Texto padrão do nosso site</p>
-        <p>-----</p>
-        <p>Trybe</p>
+    <header class="main-header">
+      <h1>Meu Calendário</h1>
+    </header>
+
+    <main>
+      <header class="month-container">
+        <ul>
+          <li id="month">Novembro</li>
+          <li id="year">2020</li>
+        </ul>
+      </header>
+
+      <section class="week-days-container">
+        <ol class="week-days">
+        </ol>
+      </section>
+
+      <section class="days-container">
+        <ol id="days">
+        </ol>
+      </section>
+
+      <section class="controls-container">
+        <button id="btn-holiday">Feriados</button>
+        <button id="btn-friday">Sextou</button>
       </section>
     </main>
-    
-    <script src="script.js" ></script>
+    <script src="script.js"></script>
   </body>
 </html>
