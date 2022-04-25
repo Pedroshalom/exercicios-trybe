@@ -51,3 +51,5 @@ function bomDiaTryber(nome) {
           return n2
       }
   console.log(menorQue(1, 4));
+
+  
