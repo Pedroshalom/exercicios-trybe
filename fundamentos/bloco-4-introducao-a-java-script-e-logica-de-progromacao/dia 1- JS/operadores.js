@@ -129,25 +129,34 @@ switch (trafficLight) {
 //1.Crie uma variável para armazenar o estado da pessoa candidata 
 //no processo seletivo, que pode ser: 'aprovada' , 'lista' ou 'reprovada';
 
-let pessoaCandidata = 'Macau'
-
+// let pessoaCandidata = 'Natal-RN'
 //2.Crie uma estrutura condicional com o switch/case que irá imprimir as mensagens
- //do exercício anterior se o estado da pessoa candidata for 'aprovada' , 
- //'lista' ou 'reprovada'. Como default , imprima a mensagem de 'não se aplica' 
+//do exercício anterior se o estado da pessoa candidata for 'aprovada' , 
+//'lista' ou 'reprovada'. Como default , imprima a mensagem de 'não se aplica' 
 
-switch(pessoaCandidata) {
-    case 'Natal-RN':
-        console.log('Aprovado');
+
+// switch(pessoaCandidata) {
+//     case 'Natal-RN':
+//         console.log('Aprovado');
+//         break;
+// }
+let andrezaEpedro = 'familia'
+switch(andrezaEpedro) {
+    case 'familia':
+        console.log('Maju');
         break;
-
-    case 'Bahia':
-        console.log('Lista');
-        break;
-
-    case 'João Pessoa':
-      console.log('Reprovado');
-        break;
-
-        default:
-        console.log('Não se aplica');
 }
+//         default:
+//         console.log('Não se aplica');
+// }
+//     case 'Bahia':
+//         console.log('Lista');
+//         break;
+
+//     case 'João Pessoa':
+//       console.log('Reprovado');
+//         break;
+
+//         default:
+//         console.log('Não se aplica');
+// }
