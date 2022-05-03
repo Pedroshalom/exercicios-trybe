@@ -89,17 +89,8 @@
 //     res.innerHTML += '<p>Dirija sempre com cinto de segurança</p>'
 // }
 
-function mostrar(pais) {
-    let pais = document.getElementById('pais')
+// 
+
+function teste () {
     
-    let res = document.getElementById('res')
-    let pa = (pais.value)
-    res.innerHTML += `seu país de origem é ${pa}`
-    if (pa == 'Brasil') {
-        res.innerHTML >= 'vc é brasileiro'
-    } else {
-        'vc é estrangeiro'
-    }
-     
 }
-console.log(mostrar)
