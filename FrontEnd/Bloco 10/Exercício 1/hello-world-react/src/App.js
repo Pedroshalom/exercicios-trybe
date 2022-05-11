@@ -1,11 +1,13 @@
+import './App.css';
 
-    import React from 'react';
-    import './App.css';
+    
+function app() {
 
-    const Task = (value) => {
-      return (
-        <li key={value}>{value}</li>
-      );
+  const Task = (value) => {
+        return (
+          <li key={value}>{value}</li>
+        );
+} 
     }
 
     const tarefas = ['Acordar', 'Tomar café', 'Escovar os dentes', 'Ir trabalhar'];

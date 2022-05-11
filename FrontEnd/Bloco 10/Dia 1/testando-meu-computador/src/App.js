@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+/* Embora isso funcione, essa DEFINITIVAMENTE
+não é a maneira correta de se criar eventos
+em React! A função se refere ao componente,
+então deve ser parte de sua classe! */
+function handleClick() {
+  console.log('Clicou no botão!')
+}
+
+class App extends React.Component {
+  /* Repare que, diferentemente do HTML, no
+  JSX você associa uma função a um evento
+  passando a própria função entre chaves `{}` */
+  render() {
+    return <button onClick={handleClick}>Meu botão</button>
+  }
 }
 
 export default App;
