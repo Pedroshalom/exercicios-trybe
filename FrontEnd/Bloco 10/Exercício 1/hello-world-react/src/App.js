@@ -1,23 +1,46 @@
+import React from 'react';
 import './App.css';
+import logo from './assets/trybemestar.png';
+import Timer from './components/Timer';
 
-    
-function app() {
+// adicionar botão para esconder e mostrar o Timer 😉
+// fazer o timer rodar sozinho 🤩
+// fazer o timer rodar até o número 5, e depois voltar para 1 ✅
+// fazer as "fases" do meu timer (inspira, segura, expira) ✅
+// Bônus - colocar um "sonzinho" a cada segundo
 
-  const Task = (value) => {
-        return (
-          <li key={value}>{value}</li>
-        );
-} 
-    }
+class App extends React.Component {
+  state = {
+    showTimer: true,
+  };
 
-    const tarefas = ['Acordar', 'Tomar café', 'Escovar os dentes', 'Ir trabalhar'];
+  toggleTimer = () => {
+    this.setState(({ showTimer }) => ({ showTimer: !showTimer }));
+  };
 
-    class App extends React.Component {
-      render() {
-        return (
-          <ul>{ tarefas.map(tarefa => Task(tarefa)) }</ul>
-        );
-      }
-    }
+  // timerElement() {
+  //   const { showTimer } = this.state;
+  //   if (showTimer) {
+  //     return <Timer />;
+  //   }
+  // }
 
-    export default App;
+  render() {
+    const { showTimer } = this.state;
+    return (
+      <div>
+        <header>
+          <img src={ logo } className="App-logo" alt="logo" />
+        </header>
+        {/* {this.timerElement()} */}
+        {/* {showTimer === true ? <Timer /> : null} */}
+        {showTimer === true && <Timer />}
+        <button type="button" onClick={ this.toggleTimer }>
+          {showTimer ? 'Esconder Timer' : 'Mostrar Timer'}
+        </button>
+      </div>
+    );
+  }
+}
+
+export default App;
