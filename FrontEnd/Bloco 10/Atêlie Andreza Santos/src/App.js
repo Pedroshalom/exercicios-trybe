@@ -16,9 +16,11 @@
 
 // import logo from './assets/logo.png';
 import bolsa1 from './assets/bolsa1.jpg';
-
 import bolsa2 from './assets/bolsa2.jpg';
+import bolsa3 from './assets/bolsa3.jpg';
+import bolsa4 from './assets/bolsa4.jpg';
 import foto from './assets/foto.jpg';
+import foto1 from './assets/foto1.jpg';
 import React from 'react';
 import './App.css'
 
@@ -38,12 +40,21 @@ class App extends React.Component {
     <h4>📦𝑽𝒆𝒏𝒅𝒂𝒔 𝒐𝒏𝒍𝒊𝒏𝒆;</h4>
     <h4>📲 𝑷𝒂𝒓𝒂 𝒎𝒂𝒊𝒔 𝒊𝒏𝒇𝒐𝒓𝒎𝒂𝒄𝒐𝒆𝒔 𝒂𝒄𝒆𝒔𝒔𝒆 𝒐 𝒍𝒊𝒏𝒌 𝒅𝒐 𝒘𝒂𝒕𝒕𝒔 👇</h4>
 
-    <h1>seção flex-box</h1>
+    <h1>
+    <ol className='lista'>
+      <li><a href='/'>Clientes ❣️</a></li>
+      <li><a href='/'>Ponto Baixo ❣️ </a></li>
+      <li><a href='/'>Boas Vindas ❣️</a></li>
+      </ol>
+    </h1>
     <section className='flex'>
       <div>
       <img src={bolsa1} alt='bolsa1' />
-      <img src={bolsa2} alt='bolsa2' />
       <img src={foto} alt='foto' />
+      <img src={bolsa2} alt='bolsa2' />
+      <img src={bolsa3} alt='bolsa3' />
+      <img src={bolsa4} alt='bolsa4' />
+      <img src={foto1} alt='foto1' />
       </div>
       
     </section>
