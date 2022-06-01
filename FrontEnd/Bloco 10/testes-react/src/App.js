@@ -1,14 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './App.css';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+class App extends React.Component {
+  state = {
       email: '',
       saveEmail: '',
     };
-  }
+  
 
   changeEmail (value) {
     this.setState({email:value});
@@ -22,7 +20,7 @@ class App extends Component {
     const {email, saveEmail} = this.State;
   
   return (
-    <div>
+    <div className="App">
       <label htmlFor='id-email'>
       email
       <imput
@@ -45,6 +43,5 @@ class App extends Component {
   );
 }
 }
-
 
 export default App;
