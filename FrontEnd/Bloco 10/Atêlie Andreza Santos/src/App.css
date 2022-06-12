@@ -79,3 +79,88 @@ h1 {
   flex: 11 200;
  margin: 10px;
 }
+
+.nav_tabs {
+  width: 600px;
+  height: 400px;
+  margin: 100px auto;
+  background-color: grey;
+  position: relative;
+}
+
+.nav_tabs ul{
+  list-style: none;
+}
+
+.nav_tabs ul li{
+  float: left;
+}
+
+.nav_tabs label{
+  width: 100px;
+  padding: 25px;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  background-color: #363b48;
+  color: black;
+  
+}
+
+.rd_tabs:checked ~ label{
+  background-color: #ffcbdb;
+}
+.rd_tabs {
+  display: none;
+}
+
+.content {
+  border-top: 5px solid #ffcbdb;
+  background-color: grey;
+  display: none;
+  position: absolute;
+  height: 320px;
+  width: 600px;
+  left: 0;
+}
+
+.rd_tabs:checked ~ .content{
+  display: block;
+}
+
+.texto {
+ align-items:center;
+ padding-right: 400px;
+ padding-top: 12px; 
+}
+
+.texto2 {
+  padding-top: 12px;
+ }
+
+ .texto3 {
+  padding-top: 12px;
+ }
+
+ .footer {
+  /* position: absolute; */
+  text-align: center;
+  background: #ffcbdb;
+  
+  margin: 0px;
+ }
+
+ .foto {
+  max-width:30px;
+  max-height:30px;
+  width: auto;
+  height: auto;
+}
+
+.contato {
+  max-width:30px;
+  max-height:30px;
+  width: auto;
+  height: auto;
+  align-items: center;
+}
