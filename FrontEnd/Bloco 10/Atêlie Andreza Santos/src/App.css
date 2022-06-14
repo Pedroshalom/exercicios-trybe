@@ -43,7 +43,7 @@ h2{
 
 body {
   background-color: grey;
-}
+ }
 
 img {
   /* align-items: flex; */
@@ -60,9 +60,37 @@ span {
   grid-gap: 8px
 }
 
-h4, p {
+.cima {
   text-align: center;
 }
+.contatos {
+  text-align: center;
+}
+.videos {
+  /* border-width: thin; */
+  /* border-bottom: 20px; */
+  border-style: solid;
+  border-color: #ffcbdb;
+  padding-top: 5%;
+  margin: 0 auto;
+    width: 500px;
+   display: flex;
+   padding-left: 12%;
+}
+
+.vid {
+  /* border-width: thin; */
+  /* border-bottom: 20px; */
+  border-style: solid;
+  border-top: 20%;
+  border-color: #ffcbdb;
+  padding-top: 5%;
+  margin: 0 auto;
+    width: 500px;
+   display: flex;
+   padding-left: 12%;
+}
+
 
 h1 {
   text-align: center;
@@ -140,7 +168,15 @@ h1 {
 
  .texto3 {
   padding-top: 12px;
+  
+  width: 700px;
+    height: 700px;
+    display: block;
  }
+ /* .bolsapaz {
+  width: 250px;
+  height: 250px ;
+ } */
 
  .footer {
   /* position: absolute; */
@@ -164,3 +200,10 @@ h1 {
   height: auto;
   align-items: center;
 }
+
+.sobre {
+  padding-left: 2%;
+  /* padding-right: 1%; */
+  text-align: center;
+}
+
