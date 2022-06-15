@@ -4,7 +4,7 @@
 function Home () {
     return(
         <>
-        <section className="cima">
+        <section className="section">
         <h2><strong>𝑨𝒏𝒅𝒓𝒆𝒛𝒂 𝑺𝒂𝒏𝒕𝒐𝒔 𝑨𝒕𝒆𝒍𝒊𝒆</strong></h2>
     <h4>Empreendedora</h4>
     <p>❣️Ⓒⓡⓞⓒⓗⓔ Ⓜⓞⓓⓔⓡⓝⓞ❣️</p>
@@ -41,7 +41,8 @@ function Home () {
         <input type="radio" name='tabs' className='rd_tabs' id='Produtos' />
         <label for= "Produtos">🪡Produtos</label>
         <div className='content'>
-          <article className='texto3'>
+       
+          < div className='texto3'>
             <img src='bolsa1.jpg' alt='bolsa1'/>
             <img src='bolsa2.jpg' alt='bolsa azul'/>
             <img src='bolsa3.jpg' alt='bolsa rosa'/>
@@ -54,7 +55,8 @@ function Home () {
             <img className="bolsapaz" src='bolsapaz.jpg' alt='bolsa paz'/>
             <img src='bolsarequinte.jpg' alt='bolsa requinte'/>
             <img src='bolsarosachock.jpg' alt='bolsa rosa chock'/>
-          </article>
+          
+            </div>
         </div>
       </li>
      </ul>
@@ -62,7 +64,9 @@ function Home () {
     <section className='flex'>
      {/* <Photos/> */}
     </section>
-   
+    <footer className="rodape">
+      <p>© Todos os direitos reservados a&emsp;🪡𝑨𝒏𝒅𝒓𝒆𝒛𝒂 𝑺𝒂𝒏𝒕𝒐𝒔 𝑨𝒕𝒆𝒍𝒊𝒆🪡</p>
+    </footer>
     </>
     )
 }
