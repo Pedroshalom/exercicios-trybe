@@ -1,5 +1,5 @@
-function Sobre () {
-    return(
+function Sobre() {
+    return (
         <section>
             <p className="sobre">Sejam muito bem vindos!
                 A sua crocheteria está aqui.
