@@ -17,8 +17,35 @@ function App() {
         {/* <li><Link to='/products'>Produtos</Link></li> */}
         {/* <li><Link to='/contacts'>Contatos</Link></li> */}
         <li><Link to='/Videos'>Videos</Link></li>
-
+        
       </ul>
+      <div className='button' >
+      {/* <button 
+          type="button"
+          // data-testid="query-button"
+          // onClick={ this.onClickButton }
+        >
+          Adicionar
+        </button>  */}
+        </div>
+        <div  className="carrinho" >
+        <a href="o"><img src='carrinho1.png' alt='logo carrinho' /></a>
+      </div>
+      {/* <input className='button' placeholder='adicionar'
+          value=''
+          // onChange={ this.onChangeInput }
+          // data-testid="query-input"
+        />
+        <span className='espaço' />
+        <button className='button'
+          type="button"
+          // data-testid="query-button"
+          // onClick={ this.onClickButton }
+        >
+          Pesquisar
+        </button> */}
+        
+      
 
       <Routes>
         <Route element={<Home />} path='/' exact />
